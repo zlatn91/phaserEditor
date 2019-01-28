@@ -1,0 +1,41 @@
+{
+  "img": [
+    {
+      "type": "image",
+      "key": "ball",
+      "url": "assets/img/ball.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "field",
+      "url": "assets/img/field.jpg",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "korea",
+      "url": "assets/img/korea.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "korea2",
+      "url": "assets/img/korea2.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "ball2",
+      "url": "assets/img/ball2.png",
+      "overwrite": false
+    }
+  ],
+  "meta": {
+    "generated": "1548317823705",
+    "app": "Phaser Editor",
+    "url": "http://phasereditor.boniatillo.com",
+    "version": "1.0",
+    "copyright": "Arian Fornaris (c) 2015,2016"
+  }
+}
