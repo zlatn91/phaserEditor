@@ -21,7 +21,7 @@
       200
     ],
     "showGrid": true,
-    "create_after": "\r\n\r\n\r\nthis.game.physics.arcade.worldBounds = true;\r\nvar bounds = new Phaser.Rectangle(140, 140, 1030, 580);\r\nthis.game.world.setBounds(bounds.x, bounds.y, bounds.width, bounds.height);\r\nvar graphics = this.game.add.graphics(bounds.x, bounds.y);\r\ngraphics.lineStyle(4, 0xffd900, 1);\r\ngraphics.drawRect(0, 0, bounds.width, bounds.height);\r\n\r\nthis.fBall.body.onWorldBounds = new Phaser.Signal();\r\nthis.fBall.body.onWorldBounds.add(setBounce, this);\r\n\r\nthis.fBall.body.onCollide = new Phaser.Signal();\r\nconsole.log(\"Collide Test: \"+ this.fBall.body.onCollide);\r\n\r\n//\tthis.game.physics.arcade.collide(this.fBall, this.)\r\n//\tvar setView = new Phaser.Rectangle(0, 0, 300, 300);\r\n//\tthis.camera.view = setView;\r\n//\tthis.camera.view.setTo(-200, 0, 300, 300);\r\n//\tthis.game.camera.view.setTo(-200, 0, 300, 300);\r\nthis.game.camera.bounds.setTo(0, 0, 1280, 720);\r\n//\tthis.game.camera.setBoundsToWorld();\r\n//\tthis.game.camera.setBoundsToWorld();\r\n//\tthis.camera.follow(field);\r\n//\tthis.world.fixedToCamera = true;\r\n//field.fixedToCamera = true;\r\nthis.fBall.smoothed = false;\r\nthis.fBall.body.friction = 0.4;\r\n"
+    "create_after": "\r\n\r\n\r\nthis.game.physics.arcade.worldBounds = true;\r\nvar bounds = new Phaser.Rectangle(140, 140, 1030, 580);\r\nthis.game.world.setBounds(bounds.x, bounds.y, bounds.width, bounds.height);\r\nvar graphics = this.game.add.graphics(bounds.x, bounds.y);\r\ngraphics.lineStyle(4, 0xffd900, 1);\r\ngraphics.drawRect(0, 0, bounds.width, bounds.height);\r\n\r\nthis.fBall.body.onWorldBounds = new Phaser.Signal();\r\nthis.fBall.body.onWorldBounds.add(setBounce, this);\r\n\r\nthis.fBall.body.onCollide = new Phaser.Signal();\r\nconsole.log(\"Collide Test: \"+ this.fBall.body.onCollide);\r\n\r\n//\tthis.game.physics.arcade.collide(this.fBall, this.)\r\n//\tvar setView = new Phaser.Rectangle(0, 0, 300, 300);\r\n//\tthis.camera.view = setView;\r\n//\tthis.camera.view.setTo(-200, 0, 300, 300);\r\n//\tthis.game.camera.view.setTo(-200, 0, 300, 300);\r\nthis.game.camera.bounds.setTo(0, 0, 1280, 720);\r\n//\tthis.game.camera.setBoundsToWorld();\r\n//\tthis.game.camera.setBoundsToWorld();\r\n//\tthis.camera.follow(field);\r\n//\tthis.world.fixedToCamera = true;\r\n//field.fixedToCamera = true;\r\nthis.fBall.smoothed = false;\r\nthis.fBall.body.friction = 0.4;\r\nthis.fBall.smoothed = false;\r\nthis.fBall.body.friction = 0.4;\r\ngraphics2 = this.game.add.graphics(-48, 132 );\r\ngraphics2.lineStyle(4, 0xffd900, 1);\r\ngraphics3 = this.game.add.graphics (36 , 120);\r\ngraphics3.lineStyle(4, 0xA6EC8, 1); \r\n\t\r\n\t\r\n//\tvar test = graphics2.drawCircle();\r\ntimer = this.game.time.create(true);\r\n\t\r\n//\ttimer.repeat(5000, turnTimer, this);\r\ntimer.start(0);\r\ntimer.loop(3000, turnTimer, this);\r\n//\ttimer.removeAll();\r\n//\ttimer.loop(20000, turnTimer, this);\r\n\r\n\t\t\r\n\t\r\n//\tthis.fKorea_1.inputEnabled = true;\r\n//\tthis.fKorea_1.input.start(0, true);\r\n//\tthis.fKorea_1.events.onInputDown.add(yoyoyo, this);\r\n//\tthis.fKorea_1.events.onInputUp.add(yoyoyo, this);\t\r\n\t\r\n\tthis.fHomeTeam.inputEnableChildren = true;\r\n//\tthis.fHomeTeam.\r\n\tthis.fHomeTeam.onChildInputDown.add(yoyoyo, this);\r\n\t\r\n"
   },
   "stateSettings": {
     "scaleMode": "SHOW_ALL",
@@ -51,7 +51,7 @@
           "info": {
             "editorName": "field",
             "editorField": true,
-            "x": 144,
+            "x": 132,
             "y": 144
           }
         },
@@ -62,7 +62,7 @@
           "info": {
             "editorName": "ball",
             "editorField": true,
-            "x": 660,
+            "x": 648,
             "y": 432,
             "anchor.x": 0.5,
             "anchor.y": 0.46666590372721356,
@@ -86,8 +86,8 @@
           "info": {
             "editorName": "homeTeam",
             "editorField": true,
-            "x": -59,
-            "y": 107,
+            "x": -72,
+            "y": 108,
             "physicsGroup": true,
             "setAll": [
               {
@@ -117,6 +117,10 @@
               {
                 "key": "body.maxVelocity.y",
                 "value": "300"
+              },
+              {
+                "key": "inputEnableChildren",
+                "value": "true"
               }
             ],
             "children": [
@@ -189,7 +193,7 @@
           "info": {
             "editorName": "awayTeam",
             "editorField": true,
-            "x": 24,
+            "x": 12,
             "y": 96,
             "physicsGroup": true,
             "setAll": [

@@ -29,10 +29,16 @@
       "key": "ball2",
       "url": "assets/img/ball2.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "arrow",
+      "url": "assets/img/arrow.png",
+      "overwrite": false
     }
   ],
   "meta": {
-    "generated": "1548317823705",
+    "generated": "1548663716846",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
