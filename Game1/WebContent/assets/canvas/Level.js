@@ -108,7 +108,6 @@ Level.prototype.create = function () {
 	this.fKorea1_2 = _korea1_2;
 	this.fKorea1_1 = _korea1_1;
 	
-	
 	this.game.physics.arcade.worldBounds = true;
 	var bounds = new Phaser.Rectangle(125, 140, 1035, 580);
 	this.game.world.setBounds(bounds.x, bounds.y, bounds.width, bounds.height);
